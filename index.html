@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #target {
+            border: 1px solid red;
+            text-align: center;
+            /* トランジションの指定 */
+            transition: all 1s ease;
+            opacity: 1;            /* 初期値のため省略可 */
+            transform: scale(1.0); /* 初期値のため省略可 */
+        }
+
+        /* マウスホバー時には以下のようにする */
+        #target:hover {
+            /* 一部のプロパティを変更するとこで、その変化がアニメーションとして表現される */
+            opacity: 0;
+            transform: scale(10.1);
+        }
+    </style>
+</head>
+<body>
+    <p id="target">hello</p>
+</body>
+</html>
